@@ -116,7 +116,9 @@ public class ResFileDecoder {
                     return;
                 }
             }
-
+            if((inFileName.toLowerCase().endsWith(".png")){
+                System.out.println("test1");
+            }
             decode(inDir, inFileName, outDir, outFileName, "xml");
         } catch (AndrolibException ex) {
             LOGGER.log(Level.SEVERE, String.format(
